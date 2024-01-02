@@ -1,0 +1,425 @@
+/* ⭐ PART I ROOT */
+
+:root {
+  /* fonts */
+  --main-font: "Roboto", sans-serif;
+  --logo-font: "Raleway", sans-serif;
+
+  /* colors */
+  --accent-main-color: #4d5ae5;
+  --accent-second-color: #404bbf;
+  --auxiliary-one-color: #31d0aa;
+  --servo-first-color: #f4f4fd;
+  --servo-second-color: #8e8f99;
+  --servo-third-color: #e7e9fc;
+  --dark-main-color: #2e2f42;
+  --dark-second-color: #434455;
+  --light-main-color: #ffffff;
+  --light-second-color: #f4f4fd;
+  --accent-main-color: #4d5ae5;
+
+  /* other */
+  --anim-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ⭐ PART II GLOBAL & HIDDEN */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--dark-second-color);
+  background-color: var(--light-main-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
+}
+
+/* ⭐ PART III SECTION & CONTAINER   */
+
+.container {
+  width: 1158px;
+  /* TODO: max-width: 1158px  */
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid lightskyblue;
+  outline-offset: -1px;
+}
+
+.header__container {
+  display: flex;
+}
+
+.hero {
+  padding: 188px 0;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits {
+  padding: 120px 0;
+}
+
+.benefits__container {
+}
+
+.team {
+  padding: 120px 0;
+}
+
+.team__container {
+}
+
+.portfolio {
+  padding: 120px 0;
+}
+
+.portfolio__container {
+}
+
+.footer {
+  padding: 100px 0;
+}
+
+.footer__container {
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.hero,
+.footer {
+  background-color: var(--dark-main-color);
+}
+
+.team {
+  background-color: var(--light-second-color);
+}
+
+/* ⭐ PART IV TYPOGRAPHY   */
+
+.hero-title {
+  margin-bottom: 40px;
+
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+
+  text-align: center;
+
+  color: var(--light-main-color);
+
+  max-width: 496px;
+}
+
+.main_title {
+  margin-bottom: 72px;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  text-align: center;
+
+  color: var(--dark-main-color);
+}
+
+.subtitle {
+  margin-bottom: 8px;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  color: var(--dark-main-color);
+}
+
+.subtitle--center {
+  text-align: center;
+}
+
+.body-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.body-text--center {
+  text-align: center;
+}
+
+.body-text--light {
+  color: var(--light-second-color);
+}
+
+/* ⭐ PART V ELEMENTS & BUTTONS   */
+/* LOGO */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--accent-main-color);
+}
+
+.logo--dark-part {
+  color: var(--dark-main-color);
+}
+
+.logo--light-part {
+  color: var(--light-second-color);
+}
+
+/* BUTTONS */
+.button {
+  padding: 16px 32px;
+
+  border-radius: 4px;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  min-width: 169px;
+  height: 56px;
+  border: none;
+
+  color: var(--light-main-color);
+  background-color: var(--accent-main-color);
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--accent-second-color);
+}
+
+/*
+  |==============================
+  | HEADER ☘
+  |==============================
+*/
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 76px;
+  padding: 25px 0;
+}
+
+.header__pagination-ul {
+  display: flex;
+  gap: 40px;
+}
+
+.header__pagination-li {
+}
+
+.header__pagination-item {
+  display: block;
+  padding: 24px 0;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--dark-main-color);
+}
+
+.header__pagination-item:hover,
+.header__pagination-item:focus {
+  color: var(--accent-second-color);
+}
+
+.header__address {
+  margin-left: auto;
+}
+
+.header__address-ul {
+  display: flex;
+  gap: 40px;
+}
+
+.header__address-li {
+}
+
+.header__address-item {
+  display: block;
+  padding: 24px 0;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-style: normal;
+
+  color: var(--dark-second-color);
+}
+
+.header__address-item:hover,
+.header__address-item:focus {
+  color: var(--accent-second-color);
+}
+
+/*
+  |==============================
+  | HERO ☘
+  |==============================
+*/
+
+.hero__button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+  |==============================
+  | BENEFITS ☘
+  |==============================
+*/
+
+.benefits__list {
+  display: flex;
+  gap: 24px;
+}
+
+.benefits__list-li {
+  width: calc((100% - 72px) / 4);
+}
+
+/*
+  |==============================
+  | TEAM ☘
+  |==============================
+*/
+
+.team__list {
+  display: flex;
+  gap: 24px;
+}
+
+.team__card {
+  background-color: var(--light-main-color);
+  /* margin-right: 24px; */
+
+  width: calc((100% - 72px) / 4);
+
+  border-radius: 0px 0px 4px 4px;
+
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+/* .team__card:last-child {
+  margin-right: 0;
+} */
+
+.team__card-holder {
+  padding: 32px 0;
+}
+
+/*
+  |==============================
+  | PORTFOLIO ☘
+  |==============================
+*/
+
+.portfolio__list {
+  display: flex;
+  gap: 24px;
+  row-gap: 48px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.portfolio__card {
+  width: calc((100% - 48px) / 3);
+
+  background-color: var(--light-main-color);
+
+  /* border: 1px solid var(--servo-third-color); */
+  /* border: 1px solid #e7e9fc; */
+}
+
+.portfolio__card-holder {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+/*
+  |==============================
+  | FOOTER ☘
+  |==============================
+*/
+.footer__logo {
+  display: flex;
+  margin-bottom: 16px;
+
+  display: inline-block;
+}
