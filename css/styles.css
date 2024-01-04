@@ -38,6 +38,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul {
@@ -265,6 +266,38 @@ img {
   background-color: var(--accent-second-color);
 }
 
+/* 👥 socialMedia */
+
+.socialMedia {
+  display: flex;
+  gap: 24px;
+}
+
+.socialMedia--team {
+  margin: 0 16px 32px;
+}
+.socialMedia__wrap {
+  weight: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+
+  background-color: var(--accent-main-color);
+  border-radius: 50%;
+  fill: var(--light-second-color);
+}
+
+/* .socialMedia__icon {
+  fill: var(--light-second-color);
+} */
+
+.socialMedia__wrap:hover,
+.socialMedia__wrap:focus {
+  background-color: var(--auxiliary-one-color);
+}
+
 /*
   |==============================
   | HEADER ☘
@@ -401,7 +434,7 @@ img {
 } */
 
 .team__card-holder {
-  padding: 32px 0;
+  padding: 32px 0 8px 0;
 }
 
 /*
