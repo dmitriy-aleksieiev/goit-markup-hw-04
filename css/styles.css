@@ -106,17 +106,14 @@ img {
   padding: 188px 0;
 
   background-image: linear-gradient(
-      to right,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero_bg.jpg);
 
-  /* 🛑 */
-
-  /* background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; */
+  background-size: cover;
 }
 
 .hero__container {
@@ -288,23 +285,23 @@ img {
   background-color: var(--accent-second-color);
 }
 
-/* 👥 socialMedia */
+/* 👥 social-media */
 
-.socialMedia {
+.social-media {
   display: flex;
   gap: 24px;
 }
 
-.socialMedia--team {
+.social-media--team {
   margin: 8px 16px 0;
 }
 
-.socialMedia--footer {
+.social-media--footer {
   display: flex;
   gap: 16px;
 }
 
-.socialMedia__wrap {
+.social-media__wrap {
   weight: 40px;
   height: 40px;
   display: flex;
@@ -319,12 +316,12 @@ img {
   transition: background-color var(--anim-fast);
 }
 
-/* .socialMedia__icon {
+/* .social-media__icon {
   fill: var(--light-second-color);
 } */
 
-.socialMedia__wrap:hover,
-.socialMedia__wrap:focus {
+.social-media__wrap:hover,
+.social-media__wrap:focus {
   background-color: var(--auxiliary-one-color);
 }
 
@@ -529,13 +526,13 @@ img {
   /* border: 1px solid #e7e9fc; */
 }
 
-.portfolio__cardHolderTop {
+.portfolio__card-holder-top {
   position: relative;
   overflow: hidden;
   cursor: pointer;
 }
 
-.portfolio__cardHolderDown {
+.portfolio__card-holder-down {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
