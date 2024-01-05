@@ -389,6 +389,13 @@ img {
   margin-top: 20px;
 
   background: var(--accent-second-color);
+
+  position: absolute;
+
+  /* 🛑 */
+  left: 0;
+  bottom: -1px;
+  bottom: -20px;
 }
 
 .header__address {
