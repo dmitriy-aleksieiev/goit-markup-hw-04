@@ -149,6 +149,7 @@ img {
 
 .footer__container {
   display: flex;
+  align-items: baseline;
 }
 
 .header {
@@ -227,9 +228,13 @@ img {
   color: var(--light-second-color);
 }
 
+.body-text--white {
+  color: var(--light-main-color);
+}
+
 .body-text--bold {
   font-weight: 500;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 /* ⭐ PART V ELEMENTS & BUTTONS   */
@@ -322,10 +327,10 @@ img {
   fill: var(--light-second-color);
 } */
 
-.social-media__wrap:hover,
+/* .social-media__wrap:hover,
 .social-media__wrap:focus {
-  background-color: var(--auxiliary-one-color);
-}
+  background-color: var(--accent-second-color);
+} */
 
 .social-media__link {
   /* width: 100%;
@@ -343,6 +348,11 @@ img {
   fill: var(--light-second-color);
 
   transition: background-color var(--anim-fast);
+}
+
+.social-media__link:hover,
+.social-media__link:focus {
+  background-color: var(--auxiliary-one-color);
 }
 
 /*
@@ -410,7 +420,7 @@ img {
 
   position: absolute;
 
-  /* 🛑 */
+  /* 🛑 ??? */
   left: 0;
   bottom: -1px;
 
