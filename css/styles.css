@@ -355,6 +355,11 @@ img {
   background-color: var(--auxiliary-one-color);
 }
 
+.team .social-media__link:hover,
+.team .social-media__link:focus {
+  background-color: var(--accent-second-color);
+}
+
 .footer .social-media__link {
   padding: 8px;
 }
