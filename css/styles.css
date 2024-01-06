@@ -303,7 +303,7 @@ img {
   gap: 16px;
 }
 
-.social-media__wrap {
+/* .social-media__wrap {
   weight: 40px;
   height: 40px;
   display: flex;
@@ -316,7 +316,7 @@ img {
   fill: var(--light-second-color);
 
   transition: background-color var(--anim-fast);
-}
+} */
 
 /* .social-media__icon {
   fill: var(--light-second-color);
@@ -327,10 +327,22 @@ img {
   background-color: var(--auxiliary-one-color);
 }
 
-/* ?????????? */
 .social-media__link {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
+
+  weight: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+
+  background-color: var(--accent-main-color);
+  border-radius: 50%;
+  fill: var(--light-second-color);
+
+  transition: background-color var(--anim-fast);
 }
 
 /*
