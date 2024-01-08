@@ -412,7 +412,6 @@ img {
 
 .header__pagination-item--current {
   color: var(--accent-second-color);
-  padding-bottom: 0;
 
   position: relative;
 }
